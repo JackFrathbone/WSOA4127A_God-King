@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6764828294744179635
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 527598541799934870, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: m_Name
+      value: Location_Farm
+      objectReference: {fileID: 0}
+    - target: {fileID: 527598541799934871, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 527598541799934871, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 527598541799934871, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 527598541799934871, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 527598541799934871, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 527598541799934871, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 527598541799934871, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 527598541799934871, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 527598541799934871, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 527598541799934871, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 527598541799934871, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 527598541799934872, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b256d6f423825346b4848971f146adb, type: 3}
+    - target: {fileID: 1028756181778349586, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: _isProject
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028756181778349586, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: _projectTime
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028756181778349586, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: _locationName
+      value: Farm
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028756181778349586, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: _locationGuideText
+      value: Build next to a village
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028756181778349586, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: _locationMusicType
+      value: agriculture
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028756181778349586, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}
+      propertyPath: _adjacentRequirementName
+      value: Village
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 719ce002a3b8ee3478b01ae0bd1d5992, type: 3}

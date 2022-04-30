@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    public bool isPaused;
+
     private Camera _cam;
     private float _camSize;
     private Vector2 _dragOrigin;
@@ -14,13 +16,24 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float _minCamSize;
     [SerializeField] private float _maxCamSize;
 
+    [Header("Refernces")]
+    [SerializeField] private SpriteRenderer _backgroundSprite;
+
     //Sets the limits of the camera
-    [SerializeField] private float _camMinX;
-    [SerializeField] private float _camMinY;
-    [SerializeField] private float _camMaxX;
-    [SerializeField] private float _camMaxY;
+    private float _camMinX;
+    private float _camMinY;
+    private float _camMaxX;
+    private float _camMaxY;
 
 
+    private void Awake()
+    {
+        _camMinX = +_backgroundSprite.transform.position.x - _backgroundSprite.bounds.size.x / 2;
+        _camMaxX = +_backgroundSprite.transform.position.x + _backgroundSprite.bounds.size.x /2;
+
+        _camMinY = +_backgroundSprite.transform.position.y - _backgroundSprite.bounds.size.y /2;
+        _camMaxY = +_backgroundSprite.transform.position.y + _backgroundSprite.bounds.size.y /2;
+    }
 
     private void Start()
     {
@@ -30,8 +43,11 @@ public class CameraController : MonoBehaviour
 
     private void Update()
     {
-        Zoom();
-        PanCamera();
+        if (!isPaused)
+        {
+            Zoom();
+            PanCamera();
+        }
     }
 
     private void PanCamera()
@@ -70,12 +86,12 @@ public class CameraController : MonoBehaviour
         float minX = _camMinX + camWidth;
         float maxX = _camMaxX - camWidth;
 
-        float minY = _camMinY + camWidth;
-        float maxY = _camMaxY - camWidth;
+        float minY = _camMinY + camHeight;
+        float maxY = _camMaxY - camHeight;
 
         float newX = Mathf.Clamp(targetPosition.x, minX, maxX);
         float newY = Mathf.Clamp(targetPosition.y, minY, maxY);
 
-        return new Vector3(newX,newY, -10f);
+        return new Vector3(newX, newY, -10f);
     }
 }
